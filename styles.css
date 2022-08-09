@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+  font-size: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  background-color: hsl(233, 47%, 7%);
+  max-width: 40rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: white;
+  font-size: 0.9375rem;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  margin: 1.5rem auto;
+  max-width: 80%;
+  border-radius: 0.5em;
+  background-color: hsl(244, 38%, 16%);
+  overflow: hidden;
+  text-align: center;
+
+}
+
+.text {
+  margin: 2.4em;
+  text-align: center;
+}
+
+img{
+  width: 100%;
+  min-height: 100%;
+  display: block;
+}
+
+.img-desktop {
+  display: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0.5;
+  background-color: hsl(277, 64%, 61%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.3px;
+}
+
+.highlight {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.7;
+}
+
+.stat {
+  padding-bottom: 1.625em;
+}
+
+.stat h2{
+  font-size: 1.5em;
+  letter-spacing: 0.05rem;
+  padding-bottom: 0.5em;
+}
+
+.stat p{
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.0625rem;
+}
+
+.stats {
+  text-align: center;
+}
+
+@media only screen and (min-width: 90em){
+
+  * {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  body{
+
+    max-width: unset;
+
+  }
+
+  main{
+
+    display: flex;
+    flex-direction: row-reverse;
+    /* max-width: 1440px; */
+    max-width: 1110px;
+
+  }
+
+  .hero {
+    max-width: 50%;
+  }
+
+  .img-desktop {
+    display: block;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  h1{
+    font-size: 2.2rem;
+    letter-spacing: 0.6px;
+    margin-bottom: 24px;
+  }
+
+  .text_box {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+  }
+
+  .text{
+    max-width: 70%;
+    margin: 3.7em;
+    padding-top: 1em;
+  }
+
+  
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  .stats {
+    display: flex;
+    padding-top: 1em;
+    padding-left: 3.7em;
+  }
+
+  .stat {
+    padding-right: 4.4em;
+  }
+
+}
